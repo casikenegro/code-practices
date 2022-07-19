@@ -24,19 +24,12 @@ const buscarPersona = (indice) => {
   console.log("BUSCAR PERSONA RESULTADO: ", personaEncontrada);
   //return personaEncontrada;
 };
+
 console.log("BASE DE DATOS ANTES", baseDeDatosPersonas);
 agregarPersona("M", "jesus", "ortiz", 24, "27506365", 10);
 console.log("BASE DE DATOS DESPUES", baseDeDatosPersonas);
 buscarPersona(0);
 
-const encontrarPersonaConElsaldoMasAlto = () => {
-  let personaConElSaldoMasAlto = null;
+const encontrarPersonaConElSaldoMasAlto = () => {};
 
-  for (let i = 0; i < baseDeDatosPersonas.length; i++) {
-    let personaActual = baseDeDatosPersonas[i];
-
-    if (personaActual.saldo > personaConElSaldoMasAlto) {
-      personaConElSaldoMasAlto = personaActual;
-    }
-  }
-};
+const eliminarPersona = () => {};
